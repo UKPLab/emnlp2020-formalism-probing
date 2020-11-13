@@ -55,9 +55,9 @@ This repository provides the following:
     - out - models etc. are stored here
 ```
 
-- After you run the experiments, you can analyze the results using the probing/Analytics.ipynb notebook
+- After you run the experiments, you can analyze the results using the _probing/Analytics.ipynb_ jupyter notebook
 
-## Walkthrough
+## Dependencies
 
 We use python 3.6. Create a fresh conda environment and install the dependencies:
 - allennlp==0.9.0
