@@ -42,11 +42,11 @@ This repository provides the following:
 ## Tasks
 
 - We use semi-automatically aligned cross-formalism data in our experiments. However, the kit can be used for any kind of edge probing!
-- See source_data/demo.json for the probing format. It's very simple and similar to the one used in [jiant](https://github.com/nyu-mll/jiant). We pre-tokenize the tasks into wordpieces to save time during training/testing.
+- See _source_data/demo.json_ for the edge probing task format. It's very simple and similar to the one used in [jiant](https://github.com/nyu-mll/jiant-v1-legacy/tree/master/probing). We pre-tokenize the tasks into wordpieces to save time during training/testing.
 
 ## Output structure
 
-- The probing.manager class takes care of the neat project structure.
+- The _probing.ExperimentManager_ class takes care of the neat project structure.
 - Before you run your experiments, you specify a workspace. The script will generate the following folder structure:
 ```
     - configs - AllenNLP config files for experiments are stored here
