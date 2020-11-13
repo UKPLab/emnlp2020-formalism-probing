@@ -4,17 +4,17 @@ from probing.globals import DATA_HOME
 
 if __name__ == "__main__":
     # SPR experiments
-    em = ExperimentManager("/home/kuznetsov/emnlp2020_test/out_spr/")
+    em = ExperimentManager("/path/to/your/workspace_out_spr")
     for p in SPR_PROPERTIES:
         t = SPRProbingTask(p)
         em.make_probing_task(t, os.path.join(DATA_HOME, "spr1_json"))
         em.make_config(t)
-    em.run()  # em.run(random_init_bert=True)
+    em.run()  # em.run(random_init_bert=True) to run with randomly initialized BERT
     em.predict()  # need predictions to compute r2
 
     # Main experiments.
     # If running into UTF problems, try export LC_ALL="en_US.UTF-8"
-    em = ExperimentManager("/home/kuznetsov/emnlp2020_test/out_main/")
+    em = ExperimentManager("/path/to/your/workspace_out_main")
     datasets = {ds: em.get_dataset(ds) for ds in ["conll2009sl", "sr3de"]}
 
     vocabs = {ds: collect_tops(datasets[ds]) for ds in datasets}
