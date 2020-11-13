@@ -42,11 +42,11 @@ This repository provides the following:
 ## Tasks
 
 - We use semi-automatically aligned cross-formalism data in our experiments. However, the kit can be used for any kind of edge probing!
-- See _source_data/demo.json_ for the edge probing task format. It's very simple and similar to the one used in [jiant](https://github.com/nyu-mll/jiant-v1-legacy/tree/master/probing). We pre-tokenize the tasks into wordpieces to save time during training/testing.
+- See [source_data/demo.json](https://github.com/UKPLab/emnlp2020-formalism-probing/blob/master/source_data/demo.json) for the edge probing task format. It's very simple and similar to the one used in [jiant](https://github.com/nyu-mll/jiant-v1-legacy/tree/master/probing). We pre-tokenize the tasks into wordpieces to save time during training/testing.
 
 ## Output structure
 
-- The _probing.ExperimentManager_ class takes care of the neat project structure.
+- The [probing.ExperimentManager](https://github.com/UKPLab/emnlp2020-formalism-probing/blob/master/rprobe/probing/manager.py) class takes care of the neat project structure.
 - Before you run your experiments, you specify a workspace. The script will generate the following folder structure:
 ```
     - configs - AllenNLP config files for experiments are stored here
@@ -67,6 +67,6 @@ We use python 3.6. Create a fresh conda environment and install the dependencies
 - jupyter
 - torch 1.2.0 (conda install pytorch==1.2.0 torchvision==0.4.0 -c pytorch)
 
-If you want to re-run our experiments, you must prepare the data, see _data_preprocessing_.
+If you want to re-run our experiments, you must prepare the data, see [data_preprocessing](https://github.com/UKPLab/emnlp2020-formalism-probing/tree/master/rprobe/data_preprocessing).
 _Demo.py_ contains the minimal running example, and _emnlp2020.py_ is the full pipeline for the paper.
 
