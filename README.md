@@ -36,7 +36,7 @@ This repository provides the following:
 - A probing kit that can
     - Generate edge-style probing tasks
     - Run layer probing
-    - Analyze the results and output statistics
+    - Analyze the layer probing results
 - Auxiliary mapping files to merge SemLink with CoNLL-2009 ST data
 
 ## Tasks
