@@ -8,14 +8,14 @@ For German role labeling annotations need to be compiled using the script from t
 
 Here is what you need to do to prepare the data:
 
-* Set DATA_HOME in probing/globals.py to the location of your source_data folder.
-* Get the official CoNLL-2009 ST p.2 English data from LDC [1], put the contents into source_data/conll2009, rename files to train/dev/test.txt
-* Get SemLink 1.2.2c [2], unzip, rename and put into source_data/semlink_1.2.2c
-* Follow the instructions to compile SR3DE data from the official site [3] and put the result into source_data/SR3de
-* Run merge_semlink.py. This will produce the conll2009_semlink folder.
-* Run merge_sr3de.py. This will produce the SR3de_ready folder.
-* Download the XNLI data from [4]. We have a reader for it, so no need for further preprocessing.
-* The JSON-formattedsemantic proto-role labeling data can be obtained from the authors of the respective paper. Put it into source_data/spr1.
+* Set DATA_HOME in _probing/globals.py_ to the location of your source_data folder.
+* Get the official **CoNLL-2009 ST p.2 English data** from LDC [1], put the contents into _source_data/conll2009_, rename files to train/dev/test.txt
+* Get **SemLink 1.2.2c** [2], unzip, rename and put into _source_data/semlink_1.2.2c_
+* Follow the instructions to compile **SR3DE data** from the official site [3] and put the result into _source_data/SR3de_
+* Run _merge_semlink.py_. This will produce the _conll2009_semlink_ folder.
+* Run _merge_sr3de.py_. This will produce the _SR3de_ready_ folder.
+* Download the **XNLI data** from [4]. We have a reader for it, so no need for further preprocessing.
+* The JSON-formatted **semantic proto-role labeling data** can be obtained from the authors of the respective paper. Put it into _source_data/spr1_.
 
 Sometimes a role is missing in one of the formalisms or the alignment between PTB and CoNLL tokens didn't work out. We drop those cases.
 The result is written to conll2009_semlink and SR3de_ready, respectively. We will generate probing tasks from those.
@@ -23,7 +23,9 @@ If everything went well, you will get a format very similar to CoNLL-2009.
 However, now each predicate has three senses and each argument has three roles, separated by "|" (PB, VN, FN).
 Like this:
 
+```
 21	it	it	_	PRP	_	22	SBJ	_	_	_	_	A1|Theme|Event
+```
 
 1. https://catalog.ldc.upenn.edu/LDC2012T04
 2. https://verbs.colorado.edu/semlink/
