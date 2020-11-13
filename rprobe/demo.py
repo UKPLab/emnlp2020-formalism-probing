@@ -3,7 +3,7 @@ from probing.tasks import *
 
 if __name__ == "__main__":
     # Initialize the manager; workspace can be any folder on your machine.
-    em = ExperimentManager("/Users/ilok/etc/demo", True)
+    em = ExperimentManager("/your/path/to/demo", True)
 
     # Generate some probing tasks. Let's say we want to probe PropBank and VerbNet role in English.
     tt = [CoreRoleLabelingTask("en", "pb"),
