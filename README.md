@@ -1,6 +1,6 @@
 # Cross-formalism Probing for Role Semantics
 
-This repository hosts the probing framework used in our paper _A Matter of Framing: The Impact of Linguistic Formalism on Probing Results_ (EMNLP 2020).
+This repository hosts the probing framework used in our [paper](https://www.aclweb.org/anthology/2020.emnlp-main.13/) _A Matter of Framing: The Impact of Linguistic Formalism on Probing Results_ (EMNLP 2020).
 We provide scripts to generate multi-formalism role-semantic data for English and German, as well as the full probing kit for further experimentation.
 If you use it, please cite:
 
